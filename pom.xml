@@ -223,6 +223,9 @@
     <tcnative.artifactId>netty-tcnative-openssl-static</tcnative.artifactId>
     <tcnative.version>2.0.9.Final-SNAPSHOT</tcnative.version>
     <tcnative.classifier>${os.detected.classifier}</tcnative.classifier>
+<!--     windows-x86_64  Windows distribution -->
+<!--     osx-x86_64  Mac distribution -->
+<!--     linux-x86_64 -->
     <conscrypt.groupId>org.conscrypt</conscrypt.groupId>
     <conscrypt.artifactId>conscrypt-openjdk-uber</conscrypt.artifactId>
     <conscrypt.version>1.1.2</conscrypt.version>
@@ -239,30 +242,30 @@
   </properties>
 
   <!-- 配置依赖和插件仓库为我们的局域网nexus服务器 -->
-  <repositories>
-    <repository>
-      <id>nexus</id>
-      <url>http://195.168.0.171:8081/repository/maven-public/</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-    </repository>
-  </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <id>nexus</id>
-      <url>http://195.168.0.171:8081/repository/maven-public/</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-    </pluginRepository>
-  </pluginRepositories>
+<!--   <repositories> -->
+<!--     <repository> -->
+<!--       <id>nexus</id> -->
+<!--       <url>http://195.168.0.171:8081/repository/maven-public/</url> -->
+<!--       <snapshots> -->
+<!--         <enabled>true</enabled> -->
+<!--       </snapshots> -->
+<!--       <releases> -->
+<!--         <enabled>true</enabled> -->
+<!--       </releases> -->
+<!--     </repository> -->
+<!--   </repositories> -->
+<!--   <pluginRepositories> -->
+<!--     <pluginRepository> -->
+<!--       <id>nexus</id> -->
+<!--       <url>http://195.168.0.171:8081/repository/maven-public/</url> -->
+<!--       <snapshots> -->
+<!--         <enabled>true</enabled> -->
+<!--       </snapshots> -->
+<!--       <releases> -->
+<!--         <enabled>true</enabled> -->
+<!--       </releases> -->
+<!--     </pluginRepository> -->
+<!--   </pluginRepositories> -->
 
   <modules>
     <module>all</module>
@@ -295,10 +298,10 @@
     <module>handler</module>
     <module>handler-proxy</module>
     <module>example</module>
-    <module>testsuite</module>
-    <module>testsuite-autobahn</module>
-    <module>testsuite-http2</module>
-    <module>testsuite-osgi</module>
+<!--     <module>testsuite</module> -->
+<!--     <module>testsuite-autobahn</module> -->
+<!--     <module>testsuite-http2</module> -->
+<!--     <module>testsuite-osgi</module> -->
     <module>microbench</module>
     <module>bom</module>
   </modules>
